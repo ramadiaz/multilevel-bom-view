@@ -7,4 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->get('api-data', 'ApiDataController::index');
+$routes->get('/bill-of-materials', 'ApiDataController::index');
