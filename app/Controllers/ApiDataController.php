@@ -16,6 +16,6 @@ class ApiDataController extends BaseController
         $data['json_data'] = json_decode($json_data, true);
 
         // Pass the JSON data to the view
-        return view('api_data_view', $data);
+        return view('bill_of_materials', $data);
     }
 }

@@ -31,6 +31,7 @@
                     <img src="/logo.png" alt="logo">
                 </div>
                 <a class="px-4 py-4 hover:bg-gradient-to-br hover:from-green-400 hover:to-blue-600 from-30% transition-all duration-500" href='/bill-of-materials'>Bill of Materials</a>
+                <a class="px-4 py-4 hover:bg-gradient-to-br hover:from-green-400 hover:to-blue-600 from-30% transition-all duration-500" href='/regist-bom'>Add new BOM</a>
                 
             </div>
         </div>
