@@ -21,12 +21,16 @@ class ApiDataController extends BaseController
 
     public function postComponent()
     {
+        $id = $this->request->getPost('id');
+        $desc = $this->request->getPost('desc');
+        $inv = $this->request->getPost('inv');
+
         $api_url = "http://localhost:8011/regist-component";
 
         $data = [
-            'component_id' => 'TEST-TEST-TEST',
-            'component_desc' => 'Ini component test dari CI4 Controller',
-            'component_inv' => 'Kg',
+            'component_id' => $id,
+            'component_desc' => $desc,
+            'component_inv' => $inv,
         ];
 
         $response = file_get_contents($api_url, false, stream_context_create([
