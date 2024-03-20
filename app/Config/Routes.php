@@ -7,4 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->get('/bill-of-materials', 'ApiDataController::index');
+$routes->get('/bill-of-materials', 'ApiDataController::getBOMs');
+
+$routes->get('/regist-bom', 'Pages::bomForm');
+
+$routes->post('/regist-bom-api', 'ApiDataController::postComponent');
+
+
