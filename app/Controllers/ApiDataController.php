@@ -19,6 +19,16 @@ class ApiDataController extends BaseController
         return view('bill_of_materials', $data);
     }
 
+    public function test()
+    {
+        $json_url = "http://localhost:8011/components";
+        $json_data = file_get_contents($json_url);
+        $data['json_data'] = json_decode($json_data, true);
+
+        // Pass the JSON data to the view
+        return view('test', $data);
+    }
+
     public function postComponent()
     {
         $id = $this->request->getPost('id');
